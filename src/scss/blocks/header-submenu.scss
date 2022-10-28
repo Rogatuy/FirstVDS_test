@@ -1,0 +1,41 @@
+.header-submenu {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 18px 0;
+    width: 100%;
+    border: none;
+    position: relative;
+}
+
+@include media-breakpoint-up(sm) {
+    .header-submenu {
+        margin: 0;
+        position: absolute;
+        background-color: $white;
+        z-index: 1;
+        border: 1px solid $black;
+        border-radius: 5px;
+        left: 12px;
+    }
+}
+
+
+.header-submenu__item {
+    padding: 5px 0 5px 10px;
+}
+
+.header-submenu__link {
+    text-decoration: none;
+    font-family: "OnestRegular", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: $black;
+}
+
+@include media-breakpoint-up(sm) {
+    .header-submenu__link {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}

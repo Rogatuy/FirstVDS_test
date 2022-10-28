@@ -1,0 +1,21 @@
+@import "~bootstrap/scss/bootstrap";
+
+//Global
+
+@import "global/global.scss";
+@import "global/variables.scss";
+@import "global/fonts.scss";
+
+//blocks
+
+@import "blocks/page-body.scss";
+@import "blocks/page-header.scss";
+@import "blocks/header-menu.scss";
+@import "blocks/header-submenu.scss";
+@import "blocks/selector-site.scss";
+
+.page-main {
+  width: 100%;
+  height: 500px;
+  border: 2px solid $orange;
+}

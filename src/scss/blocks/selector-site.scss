@@ -1,0 +1,108 @@
+.selector-site__list {
+  display: block;
+  position: absolute;
+  flex-direction: column;
+  width: 203px;
+  min-height: 270px;
+  margin: 0;
+  padding: 0 24px 0 26px;
+  list-style: none;
+  z-index: 1;
+  background:$white-very-opacity;
+  box-shadow: 0px 0px 1px $grey-opacity, 0px 2px 2px $grey-opacity, 0px 5px 10px 2px $grey-light-opacity;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-sizing: border-box;
+  top: 42px;
+}
+
+.selector-site__item {
+  text-decoration: none;
+  padding: 0;
+  padding-left: 44px;
+  margin: 0;
+  display: block;
+  min-height: 90px;
+}
+
+.selector-site__name {
+  color: $black;
+  font-family: "OnestRegular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  padding-top: 16px;
+  padding-bottom: 6px;
+  position: relative;
+  margin: 0;
+}
+
+.selector-site__name--CLO::before {
+  content: url("../img/CLO_mini_logo.svg");
+  position: absolute;
+  left: -45px;
+}
+
+.selector-site__name--VDS::before {
+  content: url("../img/FirstVDS_mini_logo.svg");
+  position: absolute;
+  left: -45px;
+}
+
+.selector-site__name--DEDIC::before {
+  content: url("../img/FirstDEDIC_mini_logo.svg");
+  position: absolute;
+  left: -45px;
+}
+
+.selector-site__description {
+  font-family: "OnestRegular", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+  color: $light-gray;
+}
+
+.selector-site__item:hover .selector-site__name,
+.selector-site__item:hover .selector-site__description {
+  color: $blue;
+}
+
+
+@include media-breakpoint-up(sm) {
+  .selector-site__button {
+    background-color: $white;
+    border: none;
+    width: 32px;
+    height: 28px;
+    padding: 0;
+    position: absolute;
+    left: 3px;
+  }
+}
+
+.selector-site__button:hover {
+  box-shadow: 0px 0px 1px $grey-opacity, 0px 2px 2px $grey-opacity, 0px 5px 10px 2px $grey-light-opacity;
+  border-radius: 6px;
+}
+
+.selector-site__button:active {
+  background-color: $very-light-blue;
+}
+
+
+.selector-site__arrow {
+  background-image: url("../img/menu_logo_arrow_down.svg");
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: 0;
+  left: 10px;
+  top: 8px;
+  background-repeat: no-repeat;
+}
+
+.selector-site__button[aria-expanded="true"] .selector-site__arrow {
+  background-image: url("../img/menu_logo_arrow_up.svg");
+}

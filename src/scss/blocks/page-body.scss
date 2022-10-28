@@ -1,0 +1,10 @@
+.page-body__page-header {
+    margin-top: 43px;
+    margin-bottom: 24px;
+}
+
+@include media-breakpoint-up(sm) {
+    .page-body__page-header {
+        margin-top: 37px;
+    }
+}

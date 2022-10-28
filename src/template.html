@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FirstVDS_test</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link 
+  </head>
+  <body class="page-body">
+    <header class="page-body__page-header">
+        <div class="page-header container gx-5 gx-sm-0">
+            <div class="row d-sm-flex align-items-sm-center">
+                <div class="col-3 col-sm-auto order-sm-0">
+                    <div class="page-header__logo">
+                        <a class="page-header__link-index" href="#">
+                            <svg width="52" height="20" viewBox="0 0 52 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M46.7543 7.64366C48.3381 7.64373 49.6228 6.35922 49.6238 4.77464C49.6247 3.19006 48.3415 1.90545 46.7577 1.90539C45.1738 1.90532 43.8891 3.18983 43.8882 4.77441C43.8873 6.35899 45.1704 7.6436 46.7543 7.64366Z" fill="#0999EE"/>
+                                <path d="M10.0043 0.252868C4.48835 0.252571 0.00999319 4.66813 0.00683463 10.1248C0.00367606 15.5815 4.47692 19.9975 9.99287 19.9978C13.0818 19.998 15.8563 18.6103 17.6857 16.434L17.5912 16.4656L14.756 13.7528C13.652 15.1721 11.9178 16.0868 9.99514 16.0866C6.68557 16.0865 4.00794 13.4053 4.00984 10.125C4.01174 6.8447 6.69247 4.16383 10.002 4.164C11.9563 4.16411 13.6578 5.0789 14.7602 6.49832L17.5985 3.78591L17.6616 3.75438C15.8031 1.641 13.0617 0.253033 10.0043 0.252868ZM41.0829 0.002213C35.5985 0.00191748 31.1516 4.41747 31.1485 9.87413C31.1453 15.3308 35.587 19.7468 41.0715 19.7471C46.5559 19.7474 51.0027 15.3319 51.0059 9.8752C51.0064 8.9605 50.8809 8.0458 50.6292 7.19417C49.8405 8.3927 48.5162 9.2127 47.0032 9.30724C47.0346 9.49649 47.0345 9.68574 47.0344 9.87499C47.0325 13.1868 44.3518 15.8362 41.0737 15.836C37.7957 15.8358 35.118 13.1547 35.1199 9.87435C35.1219 6.5625 37.8026 3.91317 41.0806 3.91335C41.4904 3.91337 41.8686 3.94493 42.2468 4.03957C42.4683 2.55714 43.4146 1.32708 44.6758 0.664776C43.5413 0.254676 42.3437 0.00228094 41.0829 0.002213ZM19.5231 0.474172L23.4316 0.474383L23.4226 15.9928L30.483 15.9931L31.4579 19.8097L19.4804 19.809L19.4916 0.474171L19.5231 0.474172Z" fill="#21325D"/>
+                            </svg>   
+                        </a>
+                        <div class="page-header__selector-site d-none d-sm-block">
+                            <button class="selector-site__button" type="button" data-bs-toggle="collapse" data-bs-target="#siteList" aria-expanded="false" aria-controls="siteList">
+                                <span class="selector-site__arrow"></span>
+                            </button>
+                            <div class="selector-site__list collapse" id="siteList">
+                                <a class="selector-site__item" href="#">
+                                    <p class="selector-site__name selector-site__name--CLO">CLO</p>
+                                    <p class="selector-site__description">Облачная инфраструктура</p>
+                                </a>
+                                <a class="selector-site__item" href="#">
+                                    <p class="selector-site__name selector-site__name--VDS">FirstDVS</p>
+                                    <p class="selector-site__description">Виртуальные <br> серверы</p>
+                                </a>
+                                <a class="selector-site__item" href="#">
+                                    <p class="selector-site__name selector-site__name--DEDIC">FirstDEDIC</p>
+                                    <p class="selector-site__description">Выделенные серверы</p>
+                                </a>
+                            </div>             
+                        </div>                      
+                    </div>
+                </div>
+                <div class="col-7 col-sm-auto mb-4 mb-sm-0 order-sm-2 gx-sm-0">
+                    <div class="page-header__search-wrapper collapse multi-collapse d-sm-block" id="menuInput">
+                        <input class="page-header__search" placeholder="поиск по сайту">
+                        <span class="page-header__search-icon"></span>
+                    </div>
+                </div>
+                <div class="col-2 d-block d-sm-none offset-md-3 d-flex justify-content-end">
+                    <button class="page-header__button-open" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="menuInput menuList menuLogIn">
+                        <span class="page-header__button-icon"></span>
+                    </button>
+                </div>
+                <div class="col-12 col-sm-auto order-sm-1">
+                    <nav class="page-header__menu header-menu collapse multi-collapse d-sm-flex" id="menuList">
+                        <ul class="header-menu__list accordion" id="header-menu">
+                            <li class="header-menu__item order-sm-1">
+                                <button class="header-menu__link header-menu__link--calculation type="button"">
+                                    <span class="d-sm-none d-md-block">Калькулятор цен</span>
+                                    <span class="d-none d-sm-block d-md-none">Калькулятор</span>
+                                </button>
+                            </li>
+                            <li class="header-menu__item order-sm-0 accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="header-menu__link header-menu__link--products accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listProducts" aria-expanded="false" aria-controls="listProducts">
+                                        Продукты
+                                        <span class="header-menu__arrow"></span>
+                                    </button>
+                                </h2>
+                                <ul class="header-submenu accordion-collapse collapse" id="listProducts" data-bs-parent="#header-menu">
+                                    <div class="accordion-body">
+                                        <li class="header-submenu__item">
+                                            <a class="header-submenu__link" href="#">Облачные сервисы</a>
+                                        </li>
+                                        <li class="header-submenu__item">
+                                            <a class="header-submenu__link" href="#">Объектное хранилище S3</a>
+                                        </li>
+                                        <li class="header-submenu__item">
+                                            <a class="header-submenu__link" href="#">Облачные базы данных</a>
+                                        </li>
+                                        <li class="header-submenu__item">
+                                            <a class="header-submenu__link" href="#">Балансировщик нагрузки</a>
+                                        </li>
+                                        <li class="header-submenu__item">
+                                            <a class="header-submenu__link" href="#">Защита от DDoS</a>
+                                        </li>
+                                        <li class="header-submenu__item">
+                                            <a class="header-submenu__link" href="#">Управление DNS</a>
+                                        </li>
+                                        <li class="header-submenu__item">
+                                            <a class="header-submenu__link" href="#">Резервное копирование</a>
+                                        </li>
+                                        <li class="header-submenu__item">
+                                            <a class="header-submenu__link" href="#">Снапшоты</a>
+                                        </li>
+                                        <li class="header-submenu__item">
+                                            <a class="header-submenu__link" href="#">API</a>
+                                        </li>
+                                        <li class="header-submenu__item">
+                                            <a class="header-submenu__link" href="#">Шаблоны приложений</a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="header-menu__item d-sm-none d-md-block order-sm-2 accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="header-menu__link header-menu__link--documents accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listDocuments" aria-expanded="false" aria-controls="listDocuments">
+                                        Документация
+                                        <span class="header-menu__arrow"></span>
+                                    </button>
+                                </h2>
+                                <ul class="header-submenu accordion-collapse collapse" id="listDocuments" data-bs-parent="#header-menu">
+                                    <div class="accordion-body">
+                                        <li class="header-submenu__item">
+                                            <a class="header-submenu__link" href="#">Документация API</a>
+                                        </li>
+                                        <li class="header-submenu__item">
+                                            <a class="header-submenu__link" href="#">База знаний</a>
+                                        </li>
+                                        <li class="header-submenu__item">
+                                            <a class="header-submenu__link" href="#">Changelog</a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="header-menu__item order-sm-3 accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="header-menu__link header-menu__link--company accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listCompany" aria-expanded="false" aria-controls="listCompany">
+                                        Компания
+                                        <span class="header-menu__arrow"></span>
+                                    </button>
+                                </h2>
+                                <ul class="header-submenu accordion-collapse  collapse" id="listCompany" data-bs-parent="#header-menu">
+                                    <div class="accordion-body">
+                                        <li class="header-submenu__item">
+                                            <a class="header-submenu__link" href="#">О нас</a>
+                                        </li>
+                                        <li class="header-submenu__item">
+                                            <a class="header-submenu__link" href="#">Блог</a>
+                                        </li>
+                                        <li class="header-submenu__item">
+                                            <a class="header-submenu__link" href="#">Контакты и документы</a>
+                                        </li>
+                                        <li class="header-submenu__item">
+                                            <a class="header-submenu__link" href="#">Реферальная программа</a>
+                                        </li>
+                                        <li class="header-submenu__item">
+                                            <a class="header-submenu__link" href="#">Способы оплаты</a>
+                                        </li>
+                                        <li class="header-submenu__item">
+                                            <a class="header-submenu__link" href="#">Техническая поддержка</a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-sm-auto order-sm-3 d-none d-sm-block gx-md-0">
+                    <div class="page-header__information">
+                        <a class="page-header__tel" href="tel:+78007775832">+7 800 777-58-32</a>
+                        <a class="page-header__email" href="mailto:info@clo.ru">info@clo.ru</a>
+                    </div>
+                </div>
+                <div class="col col-sm-auto gx-1 gx-sm-0 gy-2 gy-sm-0 order-sm-4">
+                    <button class="page-header__log-in collapse multi-collapse d-sm-block" id="menuLogIn">
+                        <span class="d-block d-sm-none d-md-none d-lg-block d-xl-none">войти в кабинет</span>
+                        <span class="d-none d-sm-block d-md-block d-lg-none">войти</span>
+                        <span class="d-none d-xl-block">войти в личный кабинет</span>
+                        <span class="page-header__log-in-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="page-main">
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
