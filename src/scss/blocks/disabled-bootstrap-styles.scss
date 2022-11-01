@@ -1,0 +1,44 @@
+//
+// Base styles disabled
+//
+
+.accordion {
+  // scss-docs-start accordion-css-vars
+  --#{$prefix}accordion-border-color: none;
+  --#{$prefix}accordion-border-width: none;
+  --#{$prefix}accordion-border-radius: none;
+  --#{$prefix}accordion-btn-icon-width: none;
+  --#{$prefix}accordion-body-padding-x: 0;
+  --#{$prefix}accordion-body-padding-y: 0;
+  --#{$prefix}accordion-active-color: none;
+  --#{$prefix}accordion-active-bg: none;
+  // scss-docs-end accordion-css-vars
+}
+
+.accordion-button {
+  align-items: normal;
+
+  &:not(.collapsed) {
+    color: $black;
+    background-color: $very-light-blue;
+    box-shadow: none;
+
+    &::after {
+      background-image: none;
+      transform: none;
+    }
+  }
+
+  // Accordion icon
+
+  &:focus {
+    border-color: none;
+    box-shadow: none;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .accordion-button:not(.collapsed) {
+      background-color: transparent;
+      }
+}

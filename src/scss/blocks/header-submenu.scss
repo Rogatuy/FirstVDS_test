@@ -24,6 +24,13 @@
     padding: 5px 0 5px 10px;
 }
 
+@include media-breakpoint-up(sm) {
+    .header-submenu__item {
+        padding: 5px;
+        border: 1px solid $black;
+    }
+}
+
 .header-submenu__link {
     text-decoration: none;
     font-family: "OnestRegular", "Arial", sans-serif;
